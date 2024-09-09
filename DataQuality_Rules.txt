@@ -1,3 +1,10 @@
 Rules = [
-        ColumnValues "transaction_id" != 'NULL'
+        ColumnValues "transaction_id" != NULL
 ]
+
+
+
+Note:
+The rules in AWS data quality checks have their own "Data Quality Definition Language".
+
+Reference: https://docs.aws.amazon.com/glue/latest/dg/dqdl.html

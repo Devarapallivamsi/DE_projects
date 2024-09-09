@@ -5,6 +5,6 @@ Rules = [
 
 
 Note:
-The rules in AWS data quality checks have their own "Data Quality Definition Language".
+The rules in AWS data quality checks have their own "Data Quality Definition Language" (DQDL).
 
 Reference: https://docs.aws.amazon.com/glue/latest/dg/dqdl.html

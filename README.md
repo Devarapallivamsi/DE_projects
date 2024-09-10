@@ -24,14 +24,17 @@
 ## Steps followed:
 
 ### 1. Sample parquet file as historical data to run data quality checks
-A sample parquet file containing 200k transaction records is stored in S3 bucket to run data quality checks
+A sample parquet file containing 200k transaction records is stored in S3 bucket to run data quality checks.
 
-### 2. Transaction files arrival in S3 buckets
-Files arrive in S3 bucket on daily basis which will be batch-ingested by glue jobmark feature triggering the pipeline to 
-process only the new records
+### 2. create the ruleset in the catalog table to run the checks against current data
+Glue Data quality ruleset is created to test the quality of historical (already existing data) records.
+
+### 3. Transaction files arrival in S3 buckets
+Files arrive in S3 bucket on daily basis which will be batch-ingested by glue job bookmark feature triggering the pipeline to 
+process only the new records.
 
 ### 3.  Setup S3 bucket
-create a bucket named *financial_trans_bucket*
+create a bucket named `financial_trans_bucket`
 
 ### 3.  Setup SNS topic
 3.1 Create an SNS topic for sending processing notifications.

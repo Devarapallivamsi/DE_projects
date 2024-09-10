@@ -22,18 +22,24 @@
 
 
 ## Steps followed:
+
 ### 1. Sample parquet file as historical data to run data quality checks
 A sample parquet file containing 200k transaction records is stored in S3 bucket to run data quality checks
+
 ### 2. Transaction files arrival in S3 buckets
 Files arrive in S3 bucket on daily basis which will be batch-ingested by glue jobmark feature triggering the pipeline to 
 process only the new records
+
 ### 3.  Setup S3 bucket
 create a bucket named *financial_trans_bucket*
+
 ### 3.  Setup SNS topic
 3.1 Create an SNS topic for sending processing notifications.
 3.2 Subscribe an email to the topic for receiving notifications.
+
 ### 4.  Create IAM role
 Create IAM roles for redshift and glue to provision working of crawlers, JDBC connection of redshift with glue, publishing a message in SNS topic
+
 ### 5.  Create and configure the pipeline
 Create a pipeline and configure it as shown in the image below connecting appropriate source and sink location(s).
 The pipeline works as follows:
@@ -42,6 +48,11 @@ The pipeline works as follows:
 * Schema will be changed (dropping per-row result of checks) to match the input file schema.
 * Each record is routed to either redshift table (if it succesfully passes the checks) or to the S3 bucket (created above).
 * The results of the data quality checks will trigger the publishing of a message in SNS topic.
+
+### 6. Testing and Verification
+* Upload the sample parquet file to financial_trans_bucket and verify that the pipeline gets triggered.
+* Query the redshift table for the records and confirm the columns do not contain any null values.
+* Ensure an email notification is received upon completion of the pipeline run.
 
 
 

@@ -1,6 +1,5 @@
-### Automated pipeline for quality data ingestion ### 
+# Automated pipeline for quality data ingestion with AWS Glue
 
-**event driven or time driven?**
 
 ## Overview
 1. This project automates the process of incremental data ingestion.
@@ -23,11 +22,26 @@
 
 
 ## Steps followed:
-1. Sample dataset is stored in S3 (as historical data) to run data quality checks.
-2. Glue crawler is used to automatically identify and store the schema in catalog tables
-3. S3 bucket is organised to store **_bad records_**, **_input_data_** and data quality results of **_historical data_**.
-4. Glue's built-in data quality checks run against existing data and store the results in the **historical_data_DQ_checks/** directory
-
+### 1. Sample parquet file as historical data to run data quality checks
+A sample parquet file containing 200k transaction records is stored in S3 bucket to run data quality checks
+### 2. Transaction files arrival in S3 buckets
+Files arrive in S3 bucket on daily basis which will be batch-ingested by glue jobmark feature triggering the pipeline to 
+process only the new records
+### 3.  Setup S3 bucket
+create a bucket named *financial_trans_bucket*
+### 3.  Setup SNS topic
+3.1 Create an SNS topic for sending processing notifications.
+3.2 Subscribe an email to the topic for receiving notifications.
+### 4.  Create IAM role
+Create IAM roles for redshift and glue to provision working of crawlers, JDBC connection of redshift with glue, publishing a message in SNS topic
+### 5.  Create and configure the pipeline
+Create a pipeline and configure it as shown in the image below connecting appropriate source and sink location(s).
+The pipeline works as follows:
+* Glue job bookmarking feature automatically identifies the newly arrived files
+* Runs data quality checks
+* Schema will be changed (dropping per-row result of checks) to match the input file schema.
+* Each record is routed to either redshift table (if it succesfully passes the checks) or to the S3 bucket (created above).
+* The results of the data quality checks will trigger the publishing of a message in SNS topic.
 
 
 

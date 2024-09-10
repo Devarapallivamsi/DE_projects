@@ -2,9 +2,9 @@
 
 
 ## Overview
-1. This project automates the process of incremental data ingestion.
+1. This project automates the process of **incremental data ingestion**.
 2. AWS Glue's built-in feature **job bookmarking** is used to ingestion only the latest data
-3. Ingested data is tested against data quality rules to ensure only quality data is ingested and are dumped into a redshift warehouse.
+3. Ingested data is tested against **data quality rules** to ensure only quality data is ingested and are dumped into a redshift warehouse.
 4. Records that fail the quality check are dumped into an S3 bucket that need to be cleaned or further dealt with.
 5. Using Eventbridge bridge pattern, SNS is leveraged to notify the user about bad records.
 

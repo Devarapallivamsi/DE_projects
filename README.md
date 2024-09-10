@@ -13,12 +13,13 @@
 1. AWS account
 2. AWS glue crawlers
 3. AWS Redshift (as data warehouse platform)
-4. AWS data catlog (~ centralised metstore containing schema BUT NOT THE ACTUAL DATA)
-5. Glue visual ETL 
-6. AWS S3 (as data lake)
-7. Amazon SNS (for notifying the user about data quality checks)
-8. AWS Eventbridge (to trigger message publishing in SNS topic)
-9. AWS IAM (for permissions and roles)
+4.AWS Virtual Private Cloud (to isolate the reources and create endpoints for connectivity)
+5. AWS data catlog (~ centralised metstore containing schema BUT NOT THE ACTUAL DATA)
+6. Glue visual ETL 
+7. AWS S3 (as data lake)
+8. Amazon SNS (for notifying the user about data quality checks)
+9. AWS Eventbridge (to trigger message publishing in SNS topic)
+10. AWS IAM (for permissions and roles)
 
 
 ## Steps followed:

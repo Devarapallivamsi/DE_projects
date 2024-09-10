@@ -25,7 +25,8 @@
 ## Steps followed:
 1. Sample dataset is stored in S3 (as historical data) to run data quality checks.
 2. Glue crawler is used to automatically identify and store the schema in catalog tables
-3. S3 bucket is organised to store **_bad records/_**, 
+3. S3 bucket is organised to store **_bad records_**, **_input_data_** and data quality results of **_historical data_**.
+4. Glue's built-in data quality checks run against existing data and store the results in the **historical_data_DQ_checks/** directory
 
 
 

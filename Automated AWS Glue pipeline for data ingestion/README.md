@@ -8,12 +8,14 @@
 4. Records that fail the quality check are dumped into an S3 bucket which need to be cleaned or further dealt with.
 5. Using Eventbridge pattern, SNS is leveraged to notify the user about data quality results.
 
+![image](https://github.com/user-attachments/assets/7a21e1a8-c1a6-4181-aaa6-4e08967cef9f)
+
 
 ## Tech stack
 1. AWS account
 2. AWS glue crawlers
 3. AWS Redshift (as data warehouse platform)
-4.AWS Virtual Private Cloud (to isolate the reources and create endpoints for connectivity)
+4. AWS Virtual Private Cloud (to isolate the reources and create endpoints for connectivity)
 5. AWS data catlog (~ centralised metstore containing schema BUT NOT THE ACTUAL DATA)
 6. Glue visual ETL 
 7. AWS S3 (as data lake)
@@ -47,7 +49,8 @@ Create IAM roles for redshift and glue to provision working of crawlers, JDBC co
 ### 5.  Create and configure the pipeline
 Create a pipeline and configure it as shown in the image below connecting appropriate source and sink location(s).
 
-![image](https://github.com/user-attachments/assets/c614a2de-d299-47b6-aff3-54f04d21bd5a)
+![Untitled design](https://github.com/user-attachments/assets/7df807d4-cc21-4e5b-a08b-4bc52aa8a855)
+
 
 The pipeline works as follows:
 * Pipeline runs as per schedule everyday.

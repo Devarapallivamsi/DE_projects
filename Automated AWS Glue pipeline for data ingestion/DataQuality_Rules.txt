@@ -1,5 +1,6 @@
 Rules = [
-        ColumnValues "transaction_id" != NULL
+        ColumnValues "transaction_id" != NULL,
+        ColumnValues "type" in ['credit','debit']
 ]
 
 

@@ -50,8 +50,9 @@ Create a pipeline and configure it as shown in the image below connecting approp
 ![image](https://github.com/user-attachments/assets/c614a2de-d299-47b6-aff3-54f04d21bd5a)
 
 The pipeline works as follows:
-* Glue job bookmarking feature automatically identifies the newly arrived files in S3
-* Runs data quality checks
+* Pipeline runs as per schedule everyday.
+* Glue job bookmarking feature automatically identifies the newly arrived files in S3.
+* Runs data quality checks.
 * The results of the data quality checks will trigger the publishing of a message in SNS topic.
 * Rule outcomes --description of how much percentage of data passed the quality checks-- will be written into S3 bucket in JSON format.
 * Row level outcomes pass through a conditional router so as to dump the records in appropriate sink(s).

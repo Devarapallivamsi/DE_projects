@@ -1,1 +1,1 @@
-# Repo hosting of my data engineering projects 🚀
+# Repo hosting my data engineering projects 🚀

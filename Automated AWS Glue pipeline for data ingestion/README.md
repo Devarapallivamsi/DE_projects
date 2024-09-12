@@ -1,6 +1,5 @@
 # Automated pipeline for quality data ingestion with AWS Glue
 
-
 ## Overview
 1. This project automates the process of **incremental data ingestion**.
 2. AWS Glue's built-in feature **job bookmarking** is used to ensure only the latest data gets ingested.

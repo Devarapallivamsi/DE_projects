@@ -2,18 +2,25 @@ Hey there! 🙋‍♂️ I'm delighted to have you here!
 
 I am **Vamsi Devarapalli**, and I am deeply **passionate about data engineering** . My journey in the world of big data is always filled with continuous learning and innovation.
 
-**About Me**
 
+**About Me**
 From transforming raw data into valuable insights to optimizing data pipelines for efficiency, I find immense joy in every aspect of data engineering. I thrive on solving complex problems and leveraging big data technologies to drive impactful solutions.
 
 Skills
 ● **Programming Languages**: Python
+
 ● **Data Warehouses**: Apache Hive, Google BigQuery, AWS Redshift
+
 ● **Databases**: MySQL, Cassandra
+
 ● **Message Queue**: Confluent Kafka
+
 ● **Distributed Computation Frameworks**: Apache Hadoop, Apache Spark
+
 ● **Workflow Management**: Airflow
+
 ● **Cloud**: AWS
+
 ● **Version Control Systems**: Git
 
 

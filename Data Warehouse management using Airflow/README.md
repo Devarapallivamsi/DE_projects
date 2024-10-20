@@ -1,4 +1,4 @@
-# Data warehouse management using Apache Airflow
+# Airflow-orchestrated automated pipeline for data warehouse management
 
 This objective of this project is to manage the Apache Hive data warehouse (built on top of GCP dataproc cluster) through an automated pipeline, orchestrated on Apache Airflow
 

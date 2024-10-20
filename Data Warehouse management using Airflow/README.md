@@ -17,10 +17,15 @@ The objective is to manage Apache Hive data warehouse (built on top of GCP datap
 ## Optimisations<br/>
 
 ✅ Upon succesfully loading the data, input file is moved to another bucket having lowest storage cost (archive class)-- ⏬:Costs.<br/>
+
 ✅ Ocaasionally, there is a possibility of not receiving the file on some days.But, sensor will unnecessarily increase the costs by pokinng the bucket.As a way around, implemented CRF to trigger the DAG.Here, charges are applied based on the number of executions and avg runtime. -- ⏬:Costs.<br/>
+
 ✅ Only post validating the input file (name and extension), DAG is triggered --Minimising the pipeline failures ❌ (to an extent) caused by inappropriate data.(Addl. validations can also be put in place as required)<br/>
+
 ✅ Cluster details are safely stored in airflow's 'Variables' in an encrypted fashion and fetched dynamically during runtime -- 🔒:Security<br/>
+
 ✅ In the event of receiving an inappropriate file, DAG trigger operation is skipped and upstream user is notified through :email: e-mail (sent using Sendgrid API) -- Aletring ⚠ mechanism and ⏬ use of computational power.<br/>
+
 ✅ Hive table is partitioned (on the date column) serving to reduce the query runtime during analytical workloads -- ⏬time.<br/>
 
 ## Tech stack<br/>

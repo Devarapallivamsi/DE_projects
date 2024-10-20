@@ -1,0 +1,26 @@
+delivery_id,date,origin,destination,vehicle_type,delivery_status,delivery_time
+51,2023-09-03,San Diego,Los Angeles,Truck,Delivered,2.5 hours
+52,2023-09-03,Atlanta,Orlando,Bike,In-Transit,6.5 hours
+53,2023-09-03,Phoenix,Tucson,Drone,Delivered,1.5 hours
+54,2023-09-03,Denver,Colorado Springs,Truck,Cancelled,2 hours
+55,2023-09-03,Miami,Jacksonville,Truck,Delivered,5 hours
+56,2023-09-03,Baltimore,Washington,Drone,Delivered,1.5 hours
+57,2023-09-03,Cincinnati,Columbus,Bike,In-Transit,2 hours
+58,2023-09-03,Dallas,Austin,Truck,Delivered,3 hours
+59,2023-09-03,Boston,Providence,Drone,Delivered,2.5 hours
+60,2023-09-03,Las Vegas,Salt Lake City,Bike,Cancelled,7 hours
+61,2023-09-03,Seattle,Portland,Truck,Delivered,3 hours
+62,2023-09-03,Richmond,Raleigh,Bike,In-Transit,3.5 hours
+63,2023-09-03,Houston,San Antonio,Truck,Delivered,3.5 hours
+64,2023-09-03,Oklahoma City,Tulsa,Drone,Delivered,2 hours
+65,2023-09-03,Minneapolis,Milwaukee,Bike,Cancelled,4 hours
+66,2023-09-03,San Francisco,Oakland,Truck,Delivered,1 hour
+67,2023-09-03,Los Angeles,Vegas,Drone,In-Transit,4 hours
+68,2023-09-03,San Jose,Palo Alto,Truck,Delivered,0.5 hours
+69,2023-09-03,Chicago,Indianapolis,Bike,Delivered,5 hours
+70,2023-09-03,Memphis,New Orleans,Drone,Cancelled,4.5 hours
+71,2023-09-03,Denver,Boulder,Truck,Delivered,1 hour
+72,2023-09-03,Sacramento,Reno,Truck,In-Transit,2.5 hours
+73,2023-09-03,Omaha,Lincoln,Bike,Delivered,1.5 hours
+74,2023-09-03,Fort Worth,Dallas,Truck,Cancelled,1 hour
+75,2023-09-03,Albuquerque,Santa Fe,Drone,Delivered,1 hour

@@ -30,19 +30,19 @@ The objective is to manage Apache Hive data warehouse (built on top of GCP datap
 8. Linux shell scripting
 
 ## Steps followed
-1. Create two GCS buckets one for the input data and the other for data archiving.
-2. Create a Cloud Run Function (to be triggered with upload events in Cloud Storage as the trigger source).
-3. Setup and start a Dataproc cluster to host Hive data warehouse.
-4. Start an airflow cluster using GCP composer environment.
-5. Create airflow python script defining all the tasks and dependencies using several of the airflow's operators.
-6. Generate and store the sendgrid API key. Ensure to verify the sender's mail address.
-7. Use Airflow web server address and API key to configure Cloud Run Function so as to notify the user or trigger the DAG post input data validation.
+1. Created two GCS buckets one for the input data and the other for data archiving.
+2. Created a Cloud Run Function (to be triggered with object uploads in Cloud Storage).
+3. Setup a Dataproc cluster to host Hive data warehouse.
+4. Started an airflow cluster using GCP composer environment.
+5. Created airflow python script defining all the tasks using airflow's operators.
+6. Generated and stored the sendgrid API key. verified the sender's (self) mail address.
+7. Used Airflow web server address and Sendgrid API key to configure Cloud Run Function to notify user or trigger the DAG post input data validation.
 
 ## Testing and verification
 1. Upload a file to input bucket
-2. If the filename is appropriate, check whether DAG is triggered succesfully else, check for mail.
+2. If the filename is valid, verify that DAG is successfully triggered.Otherwise, check your mail.
 3. Open the secureshell(SSH) of Dataproc cluster's master node and verify if data is present (using Hive Commands).
-4. Check if the file is moved into the archivng bucket succesfully.
+4. Check if the file is moved into the archiving bucket succesfully.
 
 
 

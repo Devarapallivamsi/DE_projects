@@ -1,4 +1,5 @@
-# Airflow-orchestrated automated pipeline for data warehouse management using GCP ![GCP Logo](https://upload.wikimedia.org/wikipedia/commons/5/5f/Google_Cloud_Platform_logo.png)
+# Airflow-orchestrated automated pipeline for data warehouse management using GCP ![image](https://github.com/user-attachments/assets/4c34e173-ca20-47ec-8914-cf924a819255)
+
 
 The objective is to manage Apache Hive data warehouse (built on top of GCP dataproc cluster) through an automated pipeline orchestrated on Apache Airflow
 

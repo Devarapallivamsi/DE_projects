@@ -1,6 +1,5 @@
 ![image](https://github.com/user-attachments/assets/fe6cf0d0-5856-42dc-b57b-94981b9f5ef8)
 
-
 # Airflow-orchestrated pipeline for data warehouse management on Google cloud platform<br/>
 
 The objective is to manage Apache Hive data warehouse (built on top of GCP dataproc cluster) through an automated pipeline orchestrated on Apache Airflow
@@ -14,20 +13,6 @@ The objective is to manage Apache Hive data warehouse (built on top of GCP datap
 3. Using airflow's operators, DAG tasks are defined to load data into Hive.
    and load the data.
 
-## Optimisations<br/>
-
-✅ Upon succesfully loading the data, input file is moved to another bucket having lowest storage cost (archive class)-- ⏬:Costs.<br/>
-
-✅ Ocaasionally, there is a possibility of not receiving the file on some days.But, sensor will unnecessarily increase the costs by pokinng the bucket.As a way around, implemented CRF to trigger the DAG.Here, charges are applied based on the number of executions and avg runtime. -- ⏬:Costs.<br/>
-
-✅ Only post validating the input file (name and extension), DAG is triggered --Minimising the pipeline failures ❌ (to an extent) caused by inappropriate data.(Addl. validations can also be put in place as required)<br/>
-
-✅ Cluster details are safely stored in airflow's 'Variables' in an encrypted fashion and fetched dynamically during runtime -- 🔒:Security<br/>
-
-✅ In the event of receiving an inappropriate file, DAG trigger operation is skipped and upstream user is notified through :email: e-mail (sent using Sendgrid API) -- Aletring ⚠ mechanism and ⏬ use of computational power.<br/>
-
-✅ Hive table is partitioned (on the date column) serving to reduce the query runtime during analytical workloads -- ⏬time.<br/>
-
 ## Tech stack<br/>
 1. Python
 2. GCP Cloud storage
@@ -36,6 +21,20 @@ The objective is to manage Apache Hive data warehouse (built on top of GCP datap
 5. GCP Composer (managed Apache Airflow service)
 7. Hive
 8. Linux shell scripting
+   
+## Optimisations<br/>
+
+✅ Upon succesfully loading the data, input file is moved to another bucket having lowest storage cost (archive class)-- ⏬:Costs.<br/>
+
+✅ Ocaasionally, there is a possibility of not receiving the file on some days.But, sensor will unnecessarily increase the costs by pokinng the bucket.As a way around, implemented CRF to trigger the DAG.Here, charges are applied based on the number of executions and avg runtime. -- ⏬:Costs.<br/>
+
+✅ Only post validating the input file (name and extension), DAG is triggered --Minimising the pipeline failure instances ❌ (to an extent) caused by inappropriate data.(Addl. validations can also be put in place as required)<br/>
+
+✅ Cluster details are safely stored in airflow's 'Variables' in an encrypted fashion and fetched dynamically during runtime -- 🔒:Security<br/>
+
+✅ In the event of receiving an inappropriate file, DAG trigger operation is skipped and upstream user is notified through :email: e-mail (sent using Sendgrid API) -- Aletring ⚠ mechanism and ⏬ use of computational power.<br/>
+
+✅ Hive table is partitioned (on the date column) serving to reduce the query runtime during analytical workloads -- ⏬time.<br/>
 
 ## Steps followed<br/>
 1. Created two GCS buckets one for the input data and the other for data archiving.<br/>

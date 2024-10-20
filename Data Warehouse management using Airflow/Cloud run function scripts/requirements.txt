@@ -1,0 +1,5 @@
+functions-framework==3.*
+google-auth==2.19.1
+requests==2.32.2
+python-dateutil
+sendgrid

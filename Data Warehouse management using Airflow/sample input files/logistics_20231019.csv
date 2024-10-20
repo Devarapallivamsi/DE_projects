@@ -1,0 +1,26 @@
+delivery_id,date,origin,destination,vehicle_type,delivery_status,delivery_time
+26,2023-09-02,New York,Boston,Bike,Delivered,7 hours
+27,2023-09-02,Washington,Philadelphia,Truck,In-Transit,5 hours
+28,2023-09-02,San Francisco,San Diego,Drone,Delivered,2.5 hours
+29,2023-09-02,Austin,Houston,Truck,Cancelled,4 hours
+30,2023-09-02,Orlando,Miami,Truck,Delivered,4.5 hours
+31,2023-09-02,Detroit,Chicago,Drone,Delivered,3 hours
+32,2023-09-02,Portland,Seattle,Bike,In-Transit,2.5 hours
+33,2023-09-02,Phoenix,Las Vegas,Truck,Delivered,6 hours
+34,2023-09-02,Philadelphia,New York,Drone,Delivered,2 hours
+35,2023-09-02,Memphis,Nashville,Bike,Cancelled,2.5 hours
+36,2023-09-02,Los Angeles,San Francisco,Truck,Delivered,5 hours
+37,2023-09-02,Charlotte,Atlanta,Bike,In-Transit,3.5 hours
+38,2023-09-02,San Antonio,Dallas,Truck,Delivered,4 hours
+39,2023-09-02,Reno,Vegas,Drone,Delivered,2 hours
+40,2023-09-02,Indianapolis,Columbus,Bike,Cancelled,3 hours
+41,2023-09-02,Salem,Portland,Truck,Delivered,1 hour
+42,2023-09-02,Austin,Fort Worth,Drone,In-Transit,1.5 hours
+43,2023-09-02,San Francisco,Sacramento,Truck,Delivered,2.5 hours
+44,2023-09-02,Tulsa,Oklahoma City,Bike,Delivered,3 hours
+45,2023-09-02,Raleigh,Richmond,Drone,Cancelled,1.5 hours
+46,2023-09-02,Tucson,Phoenix,Truck,Delivered,2.5 hours
+47,2023-09-02,Vancouver,Seattle,Truck,In-Transit,2 hours
+48,2023-09-02,Boston,New York,Bike,Delivered,6.5 hours
+49,2023-09-02,Houston,Dallas,Truck,Cancelled,4.5 hours
+50,2023-09-02,Lincoln,Omaha,Drone,Delivered,1.5 hours

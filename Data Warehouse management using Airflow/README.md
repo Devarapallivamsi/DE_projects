@@ -1,4 +1,6 @@
-# Airflow-orchestrated automated pipeline for data warehouse management using GCP ![image](https://github.com/user-attachments/assets/4c34e173-ca20-47ec-8914-cf924a819255)
+![image](https://github.com/user-attachments/assets/827221d6-d4ed-48c1-9e84-c04baecbb9c2)
+
+# Airflow-orchestrated automated pipeline for data warehouse management using GCP
 
 
 The objective is to manage Apache Hive data warehouse (built on top of GCP dataproc cluster) through an automated pipeline orchestrated on Apache Airflow

@@ -22,46 +22,41 @@ def trigger_dag_gcf(data, context=None):
       on the event.
       context: The context object for the event.
     """
-	# Get the date string from the file 
-	# Eg: logistics_20241020.csv -> '20241020' (it's YYYYMMDD format)
+    # Get the date string from the file 
+    # Eg: logistics_20241020.csv -> '20241020' (it's YYYYMMDD format)
     dateStr = data['name'].split("/")[-1].replace('.csv', "").replace('logistics_', "")
     
 	
     try:
-		# Try creating a datetime object out of the dateStr
+	# Try creating a datetime object out of the dateStr
         parse(dateStr, yearfirst=True)
-		fileExtension = data['name'].split(".")[-1]
+	fileExtension = data['name'].split(".")[-1]
         # If either of the above raises an error, flow skips the folloing lines and executes the part of code 
         # present in 'except' block.
         
-		if fileExtension != 'csv':
-			raise TypeError(f'Expected csv file but recieved {fileExtension}')
-			
-		
+	if fileExtension != 'csv':
+		raise TypeError(f'Expected csv file but recieved {fileExtension}')	
         web_server_url = (
             "https://7058b8ab165e4425969bb9767faf3fca-dot-us-central1.composer.googleusercontent.com"
         )
-        
-        
         dag_id = 'hive_load_airflow_dag'
-
         composer2_airflow_rest_api.trigger_dag(web_server_url, dag_id, data)
 
-
     except:
+	    
         print('Inappropriate file name.')
         """
-		Make imports only when necessary -- In the event of receiving a proper file, these package imports,
-		were done at the beginning, would have unnecessarily increased the runtime of the 
-		function, bloating the costs.
-		"""
+	Make imports only when necessary -- In the event of receiving a proper file, these package imports,
+	were done at the beginning, would have unnecessarily increased the runtime of the 
+	function, bloating the costs.
+	"""
 		
         import os
-		import sendgrid
+	import sendgrid
         from sendgrid import SendGridAPIClient
         from sendgrid.helpers.mail import Mail, Email
         from python_http_client.exceptions import HTTPError
-
+	# Access the sendgrid API key stored in cloud run function's environment varibales
         sg = SendGridAPIClient(os.environ['key-gcp-mail'])
 
         html_content = "<p>Pls send the file in the valid format</p>"

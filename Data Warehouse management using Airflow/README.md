@@ -15,7 +15,7 @@ The objective is to manage Apache Hive data warehouse (built on top of GCP datap
 
 ## Optimisations
 
-✅ Upon succesfully loading the data, input file is moved to another bucket having lowest storage cost (archive class)--> 📉Costs.
+✅ Upon succesfully loading the data, input file is moved to another bucket having lowest storage cost (archive class)--> 📉Costs.<br/>
 ✅ Airflow's deferred operator sensors can be alternative to CRF to trigger DAG upon file arrival. But, CRF gives the flexibility to the upstream user to send the file at any time and 
    charges are applied based on the number of executions and runtime.(Chances are, file may not arrive on festivals, National holidays and pipeline shouldn’t be running waiting for the file 
    which would happen if deferred operator sensor is used. ofcourse, uses less resources than a general sensor). -- 📉Costs

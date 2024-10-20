@@ -1,6 +1,6 @@
 Hey there! 🙋‍♂️ I'm delighted to have you here! 
 
-I am **Vamsi Devarapalli**, and I am deeply **passionate about data engineering** . My journey in the world of big data is always filled with continuous learning and innovation.
+I am **Vamsi Devarapalli**, a passionate data engineer. My journey in the world of big data is always filled with continuous learning and innovation.
 
 
 **About Me**<br/>

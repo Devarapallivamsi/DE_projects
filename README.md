@@ -20,7 +20,7 @@ From transforming raw data into valuable insights to optimizing data pipelines f
 
 This repository is a showcase of all my projects utilizing various big data technologies.here, you'll find a collection of my work demonstrating my expertise in data engineering. Feel free to explore, fork, and contribute!
 
-Contact Me
+Contact Me?<br/>
 I would love to connect and collaborate with like-minded individuals. You can cross paths with me at:
 
 [LinkedIn](linkedin.com/in/vamsi-devarapalli)<br/>

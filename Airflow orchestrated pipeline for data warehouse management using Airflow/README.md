@@ -9,9 +9,9 @@ The objective is to manage Apache Hive data warehouse (built on top of GCP datap
 ## Overview<br/>
 
 1. Data lands in the GCP cloud storage bucket once per day with file name in the format logistics_YYYYMMDD.csv.
-2. Google cloud run function(CRF) is configured (using Eventarc trigger in the backend) to trigger airflow DAG everytime upon object upload.
+2. A Google cloud run function(CRF) is configured (using Eventarc trigger in the backend) to trigger the airflow DAG upon object upload.
 3. Using airflow's operators, DAG tasks are defined to load data into Hive.
-   and load the data.
+   
 
 ## Tech stack<br/>
 1. Python
@@ -24,13 +24,13 @@ The objective is to manage Apache Hive data warehouse (built on top of GCP datap
    
 ## Optimisations<br/>
 
-✅ Upon succesfully loading the data, input file is moved to another bucket having lowest storage cost (archive class)-- ⏬:Costs.<br/>
+✅ Upon succesfully loading the data, input file is moved into another bucket having lowest storage cost ('archive' class buckets in GCP)-- ⏬:Costs.<br/>
 
-✅ Ocaasionally, there is a possibility of not receiving the file on some days.But, sensor will unnecessarily increase the costs by pokinng the bucket.As a way around, implemented CRF to trigger the DAG.Here, charges are applied based on the number of executions and avg runtime. -- ⏬:Costs.<br/>
+✅ Occasionally, there is a possibility of not receiving the file. But, sensor will unnecessarily increase the costs by poking the bucket. As a way around, implemented CRF to trigger the DAG. Here, charges are applied based on the number of executions and avg runtime. -- ⏬:Costs.<br/>
 
-✅ Only post validating the input file (name and extension), DAG is triggered --Minimising the pipeline failure instances ❌ (to an extent) caused by inappropriate data.(Addl. validations can also be put in place as required)<br/>
+✅ Only post validating the input file (name and extension), DAG is triggered --Minimising the pipeline failure instances ❌ (to an extent) caused by inappropriate data.(Additional validations can be put in place as required).<br/>
 
-✅ Cluster details are safely stored in airflow's 'Variables' in an encrypted fashion and fetched dynamically during runtime -- 🔒:Security<br/>
+✅ Cluster details are safely stored in airflow's 'Variables' in an encrypted fashion and fetched dynamically during runtime -- 🔒:Security.<br/>
 
 ✅ In the event of receiving an inappropriate file, DAG trigger operation is skipped and upstream user is notified through :email: e-mail (sent using Sendgrid API) -- Aletring ⚠ mechanism and ⏬ use of computational power.<br/>
 
@@ -38,10 +38,10 @@ The objective is to manage Apache Hive data warehouse (built on top of GCP datap
 
 ## Steps followed<br/>
 1. Created two GCS buckets one for the input data and the other for data archiving.<br/>
-2. Created a Cloud Run Function (to be triggered with object uploads in Cloud Storage).<br/>
+2. Created a Cloud Run Function (to be triggered with object uploads in input bucket).<br/>
 3. Setup a Dataproc cluster to host Hive data warehouse.<br/>
 4. Started an airflow cluster using GCP composer environment.<br/>
-5. Created airflow python script defining all the tasks using airflow's operators.<br/>
+5. Created airflow python script defining all the tasks viz., Hive table creation, data loading etc. using airflow's operators.<br/>
 6. Generated and stored the sendgrid API key. verified the sender's (self) mail address.<br/>
 7. Used Airflow web server address and Sendgrid API key to configure Cloud Run Function to notify user or trigger the DAG post input data validation.<br/>
 

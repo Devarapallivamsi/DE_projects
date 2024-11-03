@@ -33,7 +33,7 @@ Email Alerting: An email alerting system is configured within Databricks to noti
 -> **Automating the pipeline**:
     A Databricks workflow is configured to trigger upon file arrival that conatains two tasks, one for each notebook.
 
-    ![image](https://github.com/user-attachments/assets/28eee6a9-7121-4368-bd59-c244d640b8c4)
+    ![image](https://github.com/Devarapallivamsi/DE_projects/blob/master/Databricks%20workflow%20for%20SCD%20(Type%201)%20data%20ingestion/assets/pipeline%20run.png)
 
 
     

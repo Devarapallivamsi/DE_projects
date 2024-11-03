@@ -1,8 +1,8 @@
 
-# Project README: Automated ingestion of SCD (Type 1) Data on Databricks 
+# SCD (Type 1) Data ingestion using Databricks and PySpark on AWS
 
 ## Objective
-This project is designed to automate a data pipeline that ingests daily-data files. The pipeline ensures efficient processing, loading, and updating of a target table while maintaining data integrity. It includes steps like staging, archiving, and implmenting alerting mechanism. 
+This project is designed to automate a data pipeline that processes the daily-data files to maintain the latest and updated state of records ensuring efficient processing, loading, and updating of a target table while maintaining data integrity. It includes steps like staging, archiving, and configuring of alerting mechanism.
 
 ## Overview
 Data Ingestion: A Databricks workflow is configured to trigger upon daily data arrival (in AWS S3).
@@ -12,7 +12,7 @@ Task 1:
 Task 2:
     Merge the data from the staging table into the target table to model SCD Type 1 data.
 
-SCD Type 1 Merge: The merge operation updates existing records with new data and inserts new records.
+SCD Type 1 Merge: This operation updates existing records with new data and inserts new records.
 Email Alerting: An email alerting system is configured within Databricks to notify users of the pipeline status, as this is a production-critical pipeline.
 
 ## Tech stack
@@ -23,17 +23,17 @@ Email Alerting: An email alerting system is configured within Databricks to noti
 **AWS S3**: For storage and creation of Databricks root storage.
 **Linux Shell Scripting**: For moving files from the staging (or input) zone to the archive zone.
 
-Steps Followed
--> Storage Setup:
+## Steps Followed
+-> **Storage Setup**:
     Configured an AWS S3 bucket to receive daily data files. 
--> Data Processing and Archiving:
+-> **Data Processing and Archiving**:
     _stage_delta_archive_load_ notebook: PySpark script to load the input file into a delta table and move the file to archive.
     _stage_ingest_SCD_merge_ notebook: PySpark script to merge the staged data and target table modeling SCD (Type 1) data.
 
--> Automating the pipeline:
+-> **Automating the pipeline**:
     A Databricks workflow is configured to trigger upon file arrival that conatains two tasks, one for each notebook and a run looks as follows:
 
--> Alerting:
+-> **Alerting**:
     Set up an email alerting system within Databricks to notify users upon the completion of the workflow. This ensures prompt attention to the pipeline's status, which is crucial for production environments.
 
 **Conclusion**

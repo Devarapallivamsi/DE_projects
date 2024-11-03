@@ -1,3 +1,4 @@
+![image](https://github.com/user-attachments/assets/210aaf71-2863-4f10-b66f-02a5dd66fc09)
 
 # SCD (Type 1) Data ingestion using Databricks and PySpark on AWS
 

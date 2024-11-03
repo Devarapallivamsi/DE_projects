@@ -32,10 +32,14 @@ Email Alerting: An email alerting system is configured within Databricks to noti
 
 -> **Automating the pipeline**:
     A Databricks workflow is configured to trigger upon file arrival that conatains two tasks, one for each notebook.
+    
     ![pipeline run](https://github.com/user-attachments/assets/cb090a8c-6c94-4656-97a8-051d475e3355)
 
 -> **Alerting**:
     Set up an email alerting system within Databricks to notify users upon the completion of the workflow. This ensures prompt attention to the pipeline's status, which is crucial for production environments.
+
+    ![databricks_email_alert](https://github.com/user-attachments/assets/1b337b77-2c75-4a24-a72c-b48a134c34d6)
+
 
 **Conclusion**
 This project demonstrates the implementation of a robust data pipeline using Databricks and AWS leveraging the power of PySpark for data processing. The configured email alerting mechanism ensures that stakeholders are promptly informed of the pipeline's status, maintaining the reliability and efficiency of the production environment.

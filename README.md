@@ -8,9 +8,9 @@ From transforming raw data into valuable insights to optimizing data pipelines f
 
 
 **Skills**<br/>
-● **Programming Languages**: Python<br/>
+● **Programming Languages**: Python, SQL<br/>
 ● **Data Warehouses**: Apache Hive, Google BigQuery, AWS Redshift<br/>
-● **Databases**: MySQL, Cassandra<br/>
+● **Databases**: PostgreSQL, MongoDB<br/>
 ● **Message Queue**: Confluent Kafka<br/>
 ● **Distributed Computation Frameworks**: Apache Hadoop, Apache Spark<br/>
 ● **Workflow Management**: Airflow<br/>

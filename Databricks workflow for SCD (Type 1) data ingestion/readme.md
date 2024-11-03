@@ -5,7 +5,7 @@
 This project is designed to automate a data pipeline that processes the daily-data files to maintain the latest and updated state of records ensuring efficient processing, loading, and updating of a target table while maintaining data integrity. It includes steps like staging, archiving, and configuring the alerting mechanism.
 
 ## Overview
-Data Ingestion: A Databricks workflow is configured to trigger upon daily data arrival (in AWS S3).
+Data Ingestion: A Databricks workflow is configured to trigger upon daily data arrival (in AWS S3). <br/>
 Task 1:
     Load the data from the input file into a staging table.
     Move the input file to the archive zone. (preserving historical records)

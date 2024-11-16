@@ -1,0 +1,11 @@
+diagnosis_code,diagnosis_description
+D001,Hypertension
+D002,Diabetes Mellitus
+D003,Chronic Obstructive Pulmonary Disease
+D004,Asthma
+D005,Heart Failure
+D006,Stroke
+D007,Myocardial Infarction
+D008,Chronic Kidney Disease
+D009,Hyperlipidemia
+D010,Coronary Artery Disease

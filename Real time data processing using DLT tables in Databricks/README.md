@@ -21,7 +21,11 @@ __Medallion Lakehouse Architecture__:<br>
 **Stream Processing**: Stream tables are used to process only the latest data from the delta tables.<br>
 **Data Aggregation**: The final processed and aggregated data is dumped into separate delta tables in the gold layer.<br>
 
+# Steps followed
+1. Authored `spark_stream_data_feed.ipynb` containing pyspark script to load data to the (input) delta tables viz., `src_raw_diag_map` and `src_daily_pat_data`
+2. Authored `Define_DLT_workflow.ipynb` to define the workflow using **Delta Live Tables (DLTs)**
+3. Configured the workflow (pipeline) to run continuously and e-mail notification is enabled to notify the team in the event of failure.
 
 ## Conclusion <br>
-This project demonstrates an efficient way to process and organize streaming data using lakehouse architecture. By using Delta Live Tables, setting up the pipeline, defining tasks and dependencies among them is automated
+This project demonstrates an efficient way to process and organize streaming data using lakehouse architecture. By using Delta Live Tables, setting up the pipeline, defining tasks and dependencies among them is automated.
 

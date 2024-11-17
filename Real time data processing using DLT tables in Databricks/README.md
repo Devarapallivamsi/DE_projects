@@ -14,9 +14,9 @@ This project involves creating a data pipeline that processes and organizes stre
 
 **Delta Live Tables Workflow**: A workflow is created using Delta Live Tables to manage and process the data efficiently.<br>
 __Medallion Lakehouse Architecture__:<br>
-    *_Bronze Layer_*: Raw data is stored here.<br>
-    *_Silver Layer_*: Data is cleaned and enriched in this layer.<br>
-    *_Gold Layer_*: Final processed and aggregated data is stored here.<br>
+&nbsp;*_Bronze Layer_*: Raw data is stored here.<br>
+&nbsp;*_Silver Layer_*: Data is cleaned and enriched in this layer.<br>
+&nbsp;*_Gold Layer_*: Final processed and aggregated data is stored here.<br>
 
 **Stream Processing**: Stream tables are used to process only the latest data from the delta tables.<br>
 **Data Aggregation**: The final processed and aggregated data is dumped into separate delta tables in the gold layer.<br>

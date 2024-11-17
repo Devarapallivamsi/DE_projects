@@ -1,4 +1,5 @@
-![image](https://github.com/user-attachments/assets/64c0d3de-2006-47cc-b1d8-58d350b8919b)
+![image](https://github.com/user-attachments/assets/0ae1318d-815a-4b06-aa40-70e45a813c45)
+
 
 # Stream data processing using Delta Live Tables (DLT) in Databricks
 

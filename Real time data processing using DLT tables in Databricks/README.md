@@ -9,19 +9,19 @@
 This project involves creating a data pipeline that processes and organizes streaming data using the medallion lakehouse architecture thereby logically separating the data into three layers viz., bronze, silver and gold as per the quality of the data. 
 
 ## Features
-**Data Ingestion**: Stream data is received from the upstream team into the delta tables of our team.
-**Continuous run**: The pipeline is scheduled to run continuously to ensure real-time data processing.
+**Data Ingestion**: Stream data is received from the upstream team into the delta tables of our team.<br>
+**Continuous run**: The pipeline is scheduled to run continuously to ensure real-time data processing.<br>
 
-**Delta Live Tables Workflow**: A workflow is created using Delta Live Tables to manage and process the data efficiently.<br\>
-__Medallion Lakehouse Architecture__:
-    **Bronze Layer**: Raw data is stored here.
-    **Silver Layer**: Data is cleaned and enriched in this layer.
-    **Gold Layer**: Final processed and aggregated data is stored here.
+**Delta Live Tables Workflow**: A workflow is created using Delta Live Tables to manage and process the data efficiently.<br>
+__Medallion Lakehouse Architecture__:<br>
+    **Bronze Layer**: Raw data is stored here.<br>
+    **Silver Layer**: Data is cleaned and enriched in this layer.<br>
+    **Gold Layer**: Final processed and aggregated data is stored here.<br>
 
-**Stream Processing**: Stream tables are used to process only the latest data from the delta tables.
-**Data Aggregation**: The final processed and aggregated data is dumped into separate delta tables in the gold layer.
+**Stream Processing**: Stream tables are used to process only the latest data from the delta tables.<br>
+**Data Aggregation**: The final processed and aggregated data is dumped into separate delta tables in the gold layer.<br>
 
 
-## Conclusion
+## Conclusion <br>
 This project demonstrates an efficient way to process and organize streaming data using lakehouse architecture. By using Delta Live Tables, setting up the pipeline, defining tasks and dependencies among them is automated
 

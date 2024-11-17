@@ -12,7 +12,7 @@ This project involves creating a data pipeline that processes and organizes stre
 **Data Ingestion**: Stream data is received from the upstream team into the delta tables of our team.
 **Continuous run**: The pipeline is scheduled to run continuously to ensure real-time data processing.
 
-**Delta Live Tables Workflow**: A workflow is created using Delta Live Tables to manage and process the data efficiently.
+**Delta Live Tables Workflow**: A workflow is created using Delta Live Tables to manage and process the data efficiently.<br\>
 __Medallion Lakehouse Architecture__:
     **Bronze Layer**: Raw data is stored here.
     **Silver Layer**: Data is cleaned and enriched in this layer.

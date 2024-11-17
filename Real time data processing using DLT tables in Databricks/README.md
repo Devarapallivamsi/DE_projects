@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/64c0d3de-2006-47cc-b1d8-58d350b8919b)
+
 # Stream data processing using Delta Live Tables (DLT) in Databricks
 
 ![DLT_workflow](https://github.com/user-attachments/assets/b74e845f-ff46-476c-be83-afd72dbbf447)
@@ -19,6 +21,6 @@ __Medallion Lakehouse Architecture__:
 **Data Aggregation**: The final processed and aggregated data is dumped into separate delta tables in the gold layer.
 
 
-Conclusion
+## Conclusion
 This project demonstrates an efficient way to process and organize streaming data using lakehouse architecture. By using Delta Live Tables, setting up the pipeline, defining tasks and dependencies among them is automated
 

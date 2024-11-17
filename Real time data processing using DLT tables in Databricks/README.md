@@ -24,7 +24,7 @@ __Medallion Lakehouse Architecture__:<br>
 # Steps followed
 1. Authored `spark_stream_data_feed.ipynb` containing pyspark script to load data to the (input) delta tables viz., `src_raw_diag_map` and `src_daily_pat_data`<br>
 _NOTE_: The above step is not required in the production scenario where the streaing data may be received from kafka/a microservice based application etc.<br>
-3. Authored `Define_DLT_workflow.ipynb` to define the workflow using **Delta Live Tables (DLTs)**<br>
+3. Authored `Define_DLT_workflow.ipynb` to automate the workflow definition using **Delta Live Tables (DLTs)**<br>
 4. Configured the workflow (pipeline) to run continuously and e-mail notification is enabled to notify the team in the event of failure.<br>
 
 ## Conclusion <br>

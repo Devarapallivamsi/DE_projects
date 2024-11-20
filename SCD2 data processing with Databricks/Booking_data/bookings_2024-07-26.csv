@@ -1,0 +1,201 @@
+booking_id,customer_id,booking_date,amount,booking_type,quantity,discount,booking_status,hotel_name,flight_number
+1,1097,2024-01-14,272,Hotel,1,94,Pending,"Johnson, Leach and Kim",
+2,1077,2023-12-04,907,Hotel,4,7,Completed,"Buckley, Wang and Shaffer",
+3,1107,2024-01-17,812,Flight,1,93,Pending,,EA1978
+4,1112,2024-05-17,313,Flight,2,83,Cancelled,,LL0838
+5,1104,2023-08-25,688,Hotel,1,32,Completed,"Calhoun, Bauer and Jones",
+6,1125,2024-04-06,271,Hotel,3,80,Pending,Lee-Erickson,
+7,1128,2024-07-01,438,Hotel,3,0,Completed,"Maddox, Williams and Hess",
+8,1137,2023-12-14,651,Hotel,2,92,Pending,Miller Ltd,
+9,1047,2023-09-20,812,Hotel,3,40,Completed,"Turner, Adams and Fitzgerald",
+10,1023,2023-09-26,127,Flight,5,75,Cancelled,,Nb3015
+11,1097,2024-05-14,493,Flight,3,15,Cancelled,,Bx9386
+12,1047,2023-09-26,639,Flight,5,46,Cancelled,,lK9126
+13,1009,2023-09-02,502,Flight,4,48,Cancelled,,rc8684
+14,1067,2023-08-27,541,Flight,1,91,Pending,,OR3871
+15,1128,2023-10-18,75,Hotel,3,58,Completed,"Vega, Smith and Rubio",
+16,1081,2024-06-03,287,Hotel,1,90,Completed,"Johnson, Shaw and Jarvis",
+17,1066,2023-10-04,624,Hotel,4,6,Completed,Wells PLC,
+18,1064,2023-12-24,36,Hotel,3,79,Cancelled,"Brewer, Martinez and Martin",
+19,1096,2023-11-02,971,Hotel,5,80,Cancelled,Ochoa-Castro,
+20,1015,2023-08-22,371,Flight,4,53,Completed,,or1916
+21,1014,2024-02-25,554,Flight,3,69,Completed,,ek5337
+22,1089,2023-11-07,764,Hotel,1,68,Completed,Calderon and Sons,
+23,1088,2024-04-18,507,Flight,4,83,Cancelled,,dh7476
+24,1057,2024-04-07,427,Hotel,4,24,Completed,"Peterson, Petty and Vaughn",
+25,1138,2023-12-01,859,Hotel,3,62,Cancelled,"Oconnor, Warren and Aguirre",
+26,1149,2023-08-14,424,Hotel,2,83,Pending,"Collins, Gonzalez and Roberts",
+27,1108,2024-05-02,22,Hotel,3,34,Cancelled,Smith LLC,
+28,1137,2023-09-30,547,Flight,3,31,Pending,,Ts4042
+29,1114,2024-04-21,642,Flight,1,13,Completed,,GN9219
+30,1067,2024-05-08,148,Flight,1,70,Completed,,Od2552
+31,1137,2024-05-10,310,Flight,5,33,Pending,,SS9023
+32,1062,2023-09-18,203,Flight,1,74,Cancelled,,Il4418
+33,1116,2023-10-13,192,Hotel,3,28,Pending,Morales-Taylor,
+34,1038,2024-04-24,933,Flight,1,21,Completed,,Lz8085
+35,1103,2024-01-01,646,Hotel,1,10,Completed,"Orozco, Walton and Wright",
+36,1117,2024-03-31,627,Flight,5,15,Pending,,nV3078
+37,1103,2024-03-19,290,Hotel,4,94,Pending,Roman-Sanchez,
+38,1009,2024-06-03,232,Flight,1,59,Cancelled,,WX9994
+39,1067,2023-08-27,961,Flight,4,86,Pending,,AR1502
+40,1037,2023-10-23,105,Flight,5,28,Cancelled,,iT0017
+41,1036,2024-03-05,637,Hotel,1,39,Completed,Woods PLC,
+42,1058,2024-05-25,107,Flight,2,91,Completed,,IJ4997
+43,1058,2023-11-25,190,Hotel,3,15,Cancelled,Brown-Lee,
+44,1106,2023-08-15,863,Flight,2,48,Pending,,cP7935
+45,1064,2024-06-03,751,Hotel,3,14,Completed,"Fernandez, Martin and Smith",
+46,1128,2024-07-14,423,Hotel,1,69,Completed,"Swanson, Stone and Jennings",
+47,1030,2024-01-07,641,Flight,1,46,Pending,,Hh2064
+48,1002,2024-01-02,12,Flight,3,44,Completed,,fM9190
+49,1038,2023-08-24,230,Hotel,2,25,Pending,"Christensen, Russell and Campos",
+50,1117,2023-11-02,224,Hotel,4,40,Pending,Lee PLC,
+51,1095,2024-04-03,975,Hotel,3,93,Pending,"Oliver, Morrison and Mack",
+52,1114,2023-09-17,601,Hotel,4,13,Cancelled,"Jones, Delgado and Townsend",
+53,1054,2024-02-08,737,Hotel,1,5,Cancelled,"Smith, Lee and Davenport",
+54,1133,2023-10-23,878,Flight,2,92,Cancelled,,Sq8788
+55,1053,2023-08-05,8,Hotel,1,65,Cancelled,Benson-Castillo,
+56,1087,2024-06-04,988,Hotel,1,50,Cancelled,Smith-Lewis,
+57,1137,2024-04-08,927,Hotel,3,81,Cancelled,"Green, King and Miller",
+58,1012,2023-08-20,993,Flight,3,88,Cancelled,,fF2938
+59,1039,2023-12-14,594,Flight,1,44,Completed,,Hy3568
+60,1146,2024-06-03,231,Flight,2,20,Completed,,AS5702
+61,1013,2024-06-09,681,Flight,5,59,Completed,,uR5558
+62,1143,2024-05-22,779,Hotel,2,52,Completed,Wilson PLC,
+63,1144,2023-09-11,259,Flight,3,85,Pending,,Lp1802
+64,1132,2024-07-13,634,Hotel,4,5,Pending,"Smith, Stone and Peck",
+65,1081,2023-12-02,67,Hotel,5,96,Pending,Rodriguez-Roberts,
+66,1101,2024-03-17,348,Hotel,5,14,Cancelled,"Barry, Rojas and Hanson",
+67,1009,2023-12-25,49,Hotel,5,81,Completed,Lang-Cruz,
+68,1088,2023-10-20,268,Flight,2,52,Cancelled,,oT2970
+69,1135,2023-11-26,2,Hotel,3,15,Completed,Mitchell-Thomas,
+70,1102,2023-11-19,483,Hotel,4,90,Completed,Horton LLC,
+71,1017,2024-02-13,312,Flight,4,68,Pending,,Wx4249
+72,1098,2024-01-30,279,Hotel,5,48,Pending,Garner-Cooper,
+73,1103,2024-06-04,909,Hotel,3,56,Completed,"Sanders, Rios and Powell",
+74,1148,2023-10-22,860,Hotel,1,63,Cancelled,Newman and Sons,
+75,1067,2024-02-18,140,Flight,2,29,Pending,,ma5531
+76,1036,2024-05-15,465,Flight,2,72,Completed,,yv1005
+77,1013,2024-02-21,282,Hotel,3,8,Pending,Savage-Hawkins,
+78,1124,2023-10-10,491,Hotel,4,91,Completed,Swanson Group,
+79,1138,2024-03-25,252,Hotel,1,27,Completed,Brady-Jenkins,
+80,1108,2024-05-22,1,Flight,5,67,Pending,,Ne6680
+81,1087,2023-09-18,394,Hotel,3,38,Pending,Thornton-Hayden,
+82,1056,2024-03-22,727,Hotel,3,70,Pending,"Hernandez, Long and Carroll",
+83,1002,2023-11-23,140,Hotel,1,43,Pending,Brooks-Roy,
+84,1002,2024-06-25,989,Flight,5,93,Completed,,Yt4157
+85,1037,2024-03-02,635,Flight,2,60,Cancelled,,wz9269
+86,1037,2024-06-06,153,Hotel,1,27,Completed,"Cooper, Acevedo and Vega",
+87,1124,2024-04-27,618,Hotel,4,32,Completed,"Acosta, Carroll and Bryant",
+88,1037,2024-04-13,345,Flight,4,33,Pending,,rD2640
+89,1128,2023-12-26,201,Hotel,5,35,Pending,Myers PLC,
+90,1107,2024-05-19,340,Flight,3,84,Pending,,Bf9926
+91,1136,2024-03-31,169,Hotel,3,34,Pending,Chen-Mitchell,
+92,1118,2024-06-09,882,Flight,3,24,Cancelled,,ys7833
+93,1105,2024-06-23,322,Hotel,1,17,Completed,Larsen-Soto,
+94,1122,2023-08-20,423,Flight,1,58,Cancelled,,md3788
+95,1137,2023-08-18,239,Flight,1,71,Cancelled,,kc1188
+96,1039,2023-12-20,63,Flight,1,33,Completed,,xG0905
+97,1083,2023-07-30,517,Hotel,3,65,Pending,"Nunez, Armstrong and Brown",
+98,1110,2024-03-05,713,Flight,2,82,Pending,,fm6740
+99,1107,2023-12-18,205,Hotel,2,72,Cancelled,Stephens-Smith,
+100,1139,2023-11-10,699,Flight,1,83,Cancelled,,dO3782
+101,1001,2024-05-11,764,Hotel,1,45,Cancelled,Higgins-Jones,
+102,1006,2023-12-05,703,Flight,5,23,Pending,,hK2574
+103,1102,2024-01-31,37,Hotel,5,60,Completed,Lewis-Baker,
+104,1098,2024-05-10,213,Flight,1,3,Pending,,ni1713
+105,1039,2023-09-10,752,Hotel,2,3,Pending,"Wheeler, Ali and Harrington",
+106,1141,2023-10-05,43,Hotel,2,65,Completed,Hernandez Inc,
+107,1097,2024-07-22,766,Flight,2,56,Pending,,gu6586
+108,1114,2024-05-12,889,Hotel,2,42,Pending,Murray-Bautista,
+109,1118,2023-12-09,832,Flight,1,89,Cancelled,,jB5403
+110,1022,2024-04-21,414,Flight,4,21,Cancelled,,TC8613
+111,1145,2023-12-07,998,Flight,2,9,Cancelled,,OK2501
+112,1138,2023-08-07,909,Hotel,3,72,Completed,Gill Ltd,
+113,1142,2023-12-29,293,Flight,4,40,Completed,,Ti2249
+114,1128,2023-09-12,791,Flight,2,28,Pending,,um5702
+115,1148,2024-05-30,557,Hotel,5,94,Completed,Moses LLC,
+116,1002,2024-01-22,741,Flight,3,34,Cancelled,,ga6493
+117,1008,2023-08-26,551,Flight,3,11,Cancelled,,fj9515
+118,1087,2024-07-09,314,Flight,3,34,Completed,,DI6831
+119,1048,2024-05-02,199,Flight,1,7,Completed,,wb4276
+120,1140,2024-06-21,786,Flight,4,8,Cancelled,,el2895
+121,1098,2024-05-23,482,Flight,3,87,Completed,,Tu2854
+122,1054,2023-10-09,953,Flight,1,65,Completed,,Cd4859
+123,1021,2024-05-08,88,Flight,5,52,Cancelled,,in1520
+124,1086,2023-08-16,398,Flight,5,95,Completed,,OS3933
+125,1136,2023-08-29,525,Flight,2,68,Cancelled,,Na5592
+126,1121,2024-06-10,683,Hotel,4,78,Pending,Phelps-Sullivan,
+127,1064,2023-08-23,642,Hotel,2,33,Cancelled,Ellis-Scott,
+128,1121,2024-01-29,885,Flight,3,90,Pending,,Fy0870
+129,1008,2024-03-11,284,Hotel,5,41,Pending,Kennedy-Burns,
+130,1065,2024-04-14,711,Flight,4,93,Completed,,Ab4780
+131,1133,2023-10-27,948,Hotel,4,36,Completed,Maldonado-Barnes,
+132,1138,2024-02-09,796,Flight,3,36,Completed,,SI2407
+133,1017,2023-12-31,776,Hotel,4,36,Pending,Williams-Jones,
+134,1138,2024-07-17,820,Hotel,4,76,Completed,"Singleton, Rogers and Dyer",
+135,1050,2023-09-07,328,Hotel,4,77,Completed,Fernandez-Gibson,
+136,1089,2024-04-05,992,Flight,3,78,Pending,,YC9447
+137,1099,2024-01-24,47,Flight,4,98,Pending,,Ir9906
+138,1026,2023-11-16,705,Flight,2,57,Pending,,Ik5857
+139,1089,2024-01-25,121,Flight,1,13,Pending,,bI0078
+140,1023,2024-02-24,406,Flight,1,18,Cancelled,,wp9954
+141,1067,2023-12-20,122,Hotel,2,33,Cancelled,"Glenn, Rodriguez and Gomez",
+142,1096,2023-09-25,766,Hotel,1,31,Cancelled,"Mcguire, Mendez and Navarro",
+143,1065,2024-03-15,856,Flight,4,30,Cancelled,,fl4188
+144,1086,2023-07-29,694,Hotel,5,35,Completed,"Harris, Rogers and Tanner",
+145,1101,2023-08-28,7,Flight,3,77,Cancelled,,EL4638
+146,1131,2024-03-31,690,Hotel,4,80,Pending,"Wagner, Moore and Gray",
+147,1056,2024-04-05,161,Hotel,4,12,Completed,Wu LLC,
+148,1015,2024-07-22,757,Flight,4,18,Pending,,yw9306
+149,1085,2023-12-02,248,Hotel,4,0,Cancelled,"Gray, Martin and Hensley",
+150,1139,2023-12-18,883,Flight,2,74,Pending,,MY1216
+151,1083,2023-11-13,286,Flight,5,93,Completed,,gX2520
+152,1148,2024-05-22,534,Hotel,4,44,Pending,Johnson LLC,
+153,1012,2023-09-25,860,Hotel,5,48,Completed,Lopez-Wright,
+154,1090,2023-12-30,417,Flight,4,55,Pending,,FW8158
+155,1013,2023-12-03,858,Hotel,5,49,Pending,Washington Ltd,
+156,1114,2024-02-11,204,Flight,2,94,Pending,,JG0172
+157,1087,2023-08-21,137,Flight,1,96,Pending,,mq0961
+158,1056,2024-03-08,464,Flight,2,21,Cancelled,,go1270
+159,1054,2024-07-16,742,Flight,4,31,Cancelled,,bl3184
+160,1013,2023-09-03,217,Hotel,5,81,Pending,"Garcia, Black and Lee",
+161,1099,2024-01-27,583,Hotel,3,58,Pending,"Bush, Barker and Williams",
+162,1013,2024-01-19,316,Flight,1,99,Pending,,Zx7824
+163,1017,2023-11-07,77,Flight,1,33,Pending,,ye9781
+164,1019,2023-10-12,404,Hotel,3,31,Completed,Herring-Mcmahon,
+165,1074,2024-07-10,68,Flight,1,91,Cancelled,,MR8112
+166,1138,2023-07-28,456,Flight,5,63,Cancelled,,pm9411
+167,1085,2024-04-24,131,Flight,1,5,Cancelled,,uG7596
+168,1036,2024-02-01,487,Hotel,5,24,Cancelled,Warner PLC,
+169,1105,2024-07-22,881,Flight,1,34,Cancelled,,Yv3536
+170,1085,2023-12-21,202,Flight,5,31,Cancelled,,zk4778
+171,1086,2024-07-24,855,Hotel,5,75,Completed,Gordon LLC,
+172,1001,2023-10-06,118,Flight,3,99,Pending,,pY0940
+173,1086,2023-11-29,387,Hotel,3,91,Completed,Lane-Roberts,
+174,1095,2024-04-25,352,Flight,4,5,Pending,,Xu2026
+175,1149,2023-08-14,497,Flight,5,3,Cancelled,,CP2007
+176,1095,2023-08-11,184,Hotel,1,36,Cancelled,York Ltd,
+177,1056,2023-08-08,765,Hotel,2,6,Cancelled,Parker-Jordan,
+178,1056,2023-11-02,202,Flight,5,18,Cancelled,,sp8417
+179,1057,2023-11-18,248,Hotel,3,14,Cancelled,Rodriguez-Townsend,
+180,1035,2024-07-09,635,Hotel,4,62,Completed,Hodge PLC,
+181,1113,2024-04-03,300,Flight,2,55,Pending,,Jj4469
+182,1070,2024-01-05,180,Flight,2,79,Completed,,vM3658
+183,1108,2024-04-13,975,Flight,3,39,Cancelled,,eC1961
+184,1035,2023-12-28,186,Flight,5,20,Cancelled,,Co0159
+185,1087,2023-10-12,0,Hotel,3,14,Pending,"Gregory, Williams and Reynolds",
+186,1019,2024-06-15,811,Flight,5,92,Completed,,jx3029
+187,1137,2024-06-02,101,Flight,3,33,Completed,,Gm7717
+188,1107,2024-07-23,569,Hotel,4,83,Cancelled,"Carney, Sanchez and Robles",
+189,1102,2024-02-07,872,Hotel,2,44,Completed,"Patel, Brennan and Harrison",
+190,1077,2024-02-24,587,Flight,4,51,Pending,,eg8592
+191,1142,2023-11-23,360,Hotel,3,44,Completed,"Torres, Herrera and Collins",
+192,1135,2024-04-24,735,Hotel,1,52,Completed,Miller LLC,
+193,1050,2024-04-22,948,Flight,5,21,Pending,,IY7888
+194,1077,2024-07-19,730,Flight,5,12,Completed,,ek0968
+195,1001,2023-10-31,302,Hotel,3,67,Cancelled,"Zamora, Hammond and Terry",
+196,1112,2023-08-01,102,Hotel,3,23,Cancelled,Richards-King,
+197,1054,2023-11-02,165,Hotel,5,11,Completed,Rhodes PLC,
+198,1118,2023-09-27,496,Flight,4,97,Pending,,EA5970
+199,1114,2024-07-03,907,Hotel,3,40,Cancelled,Hall-Weeks,
+200,1089,2024-04-23,983,Flight,4,95,Completed,,kp8961

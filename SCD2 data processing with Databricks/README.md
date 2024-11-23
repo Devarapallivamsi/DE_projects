@@ -1,5 +1,5 @@
 # SCD2 merge ingestion on databricks
-
+![image](https://github.com/user-attachments/assets/fb778bdc-e593-40d5-8031-32a30309ccd4)
 ![image](https://github.com/user-attachments/assets/90ba543d-891b-4862-88ca-015512532d77)
 
 ## Overview

@@ -22,9 +22,9 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.1) Get the date<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.2) Fetch the input files corresponding to the date.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.3) Run data quality checks (defined using Pydeequ)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.4) Ingest the data if quality checks are succeeded.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.5) Implement incremental ingestion of bookings data (into fact table).<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.6) Implement SCD2 merge of customer data (into dimension table).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.4) Ingest the data if quality checks are succeeded else halt the run.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.5) Implemented incremental ingestion of bookings data (into fact table).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.6) Implemented SCD2 merge of customer data (into dimension table).<br>
 3. Created and configured the workflow to trigger the processing everyday at 11:00 A.M.(scheduled).<br>
 
 ## Conclusion

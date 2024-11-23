@@ -1,22 +1,22 @@
-![image](https://github.com/user-attachments/assets/d9cf99dc-ed70-4670-8720-e4292cce1cc7)![image](https://github.com/user-attachments/assets/632538a2-97a1-4c5c-9e4c-a1c945a03dcd)
+# SCD2 merge ingestion on databricks
 
 ![image](https://github.com/user-attachments/assets/90ba543d-891b-4862-88ca-015512532d77)
 
-# Overview
+## Overview
 1. A databricks workflow is scheduled to trigger the spark notebook.
 2. PySpark script in the notebook programmatically fetches the date of execution using python's `datetime` module.
 3. The date string is used to read the corresponding day's input files from dbfs (S3 bucket).
 4. The input files are read into spark dataframe and quality checks are run against them. 
 5. If the data quality checks are failed, pipeline run halts.Otherwise, bookings data in ingested into delta (fact) table and customer data to delta (dimension) table.
 
-# Tech Stack
+## Tech Stack
 1. AWS S3
 2. AWS IAM 
 3. Databricks
 4. PySpark
 5. Python
 
-# Steps followed
+## Steps followed
 1. Setup AWS CSP as the storage and compute provider for databricks.
 2. Authored PySpark script on databricks notebook containing the logic to process the data.
      2.1) Get the date
@@ -27,5 +27,5 @@
      2.6) Implement SCD2 merge of customer data (into dimension table).
 3. Created and configured the workflow to trigger the processing everyday at 11:00 A.M.(scheduled).
 
-# Conclusion
+## Conclusion
 This project effectively demonstrates the automated merge ingestion of SCD2 data.

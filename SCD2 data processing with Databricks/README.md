@@ -28,4 +28,4 @@
 3. Created and configured the workflow to trigger the processing everyday at 11:00 A.M.(scheduled).<br>
 
 ## Conclusion
-This project effectively demonstrates the automated merge ingestion of SCD2 data.
+This project effectively demonstrates the automated merge ingestion of SCD2 data on **databricks** platform using **PySpark**.

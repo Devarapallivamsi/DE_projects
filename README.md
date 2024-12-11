@@ -23,5 +23,5 @@ This repository is a showcase of all my projects utilizing various big data tech
 Contact Me?<br/>
 I would love to connect and collaborate with like-minded individuals. You can cross paths with me at:
 
-[LinkedIn](https://www.linkedin.com/in/vamsi-devarapalli)<br/>
-[Mail](vvitvamsi@gmail.com)
+[**LinkedIn**](https://www.linkedin.com/in/vamsi-devarapalli)<br/>
+**Mail**: (vvitvamsi@gmail.com)

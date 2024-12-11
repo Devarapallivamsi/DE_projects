@@ -24,4 +24,4 @@ Contact Me?<br/>
 I would love to connect and collaborate with like-minded individuals. You can cross paths with me at:
 
 [**LinkedIn**](https://www.linkedin.com/in/vamsi-devarapalli)<br/>
-**Mail**: (vvitvamsi@gmail.com)
+**Mail**: _vvitvamsi@gmail.com_

@@ -1,6 +1,6 @@
 # SCD data (type2) merge ingestion on databricks using PySpark
 ![image](https://github.com/user-attachments/assets/fb778bdc-e593-40d5-8031-32a30309ccd4) <br><br>
-## [_Click to view flow of the pipeline_](https://app.diagrams.net/#G10UyFN__m84G239hEkaDJhKhJ8dhcFXwh#%7B%22pageId%22%3A%220%22%7D)
+## [<u>Click to view flow of the pipeline</u>](https://app.diagrams.net/#G10UyFN__m84G239hEkaDJhKhJ8dhcFXwh#%7B%22pageId%22%3A%220%22%7D)
 
 ## Overview
 1. A databricks workflow is scheduled to trigger the spark notebook.<br>

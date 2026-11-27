@@ -4,7 +4,7 @@
 
 The objective is to manage Apache Hive data warehouse (built on top of GCP dataproc cluster) through an automated pipeline orchestrated on Apache Airflow
 
-![dag_tasks_execution_status](https://github.com/user-attachments/assets/6e265e65-2a96-4bf1-8fdc-63f2623d14bf)
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/37f39328-f80b-4dcd-bf82-a5dbd83ea736" />
 
 ## Overview<br/>
 

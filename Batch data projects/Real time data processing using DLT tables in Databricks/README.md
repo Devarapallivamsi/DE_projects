@@ -2,7 +2,8 @@
 
 
 # Stream data processing using Delta Live Tables (DLT) in Databricks
-![Uploading image.png…]()
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/0e1e27d8-b283-4e01-9da8-ec41ef92099d" />
+
 
 
 

@@ -2,8 +2,9 @@
 
 
 # Stream data processing using Delta Live Tables (DLT) in Databricks
+![Uploading image.png…]()
 
-![DLT_workflow](https://github.com/user-attachments/assets/b74e845f-ff46-476c-be83-afd72dbbf447)
+
 
 ## Overview
 This project involves creating a data pipeline that processes and organizes streaming data using the medallion lakehouse architecture thereby logically separating the data into three layers viz., bronze, silver and gold as per the quality of the data. 

@@ -1,45 +1,8 @@
 <img width="547" height="365" alt="image" src="https://github.com/user-attachments/assets/d9923e4c-2e6d-433b-b622-46374886520b" />
+
 # Real-Time Event driven Data Ingestion from Google Cloud Storage to Snowflake using Snowpipe
 
-
-## Architecture
-
-```mermaid
-flowchart LR
-    SRC["📄 Source System / User"] -->|"1. Upload file"| GCS
-
-    subgraph GCP["☁️ Google Cloud Platform"]
-        direction TB
-        GCS[("🪣 GCS Bucket")]
-        TOPIC["📢 Pub/Sub Topic"]
-        SUB["📬 Pub/Sub Subscription"]
-        GCS -->|"2. OBJECT_FINALIZE event<br/>(Bucket Notification)"| TOPIC
-        TOPIC -->|"3. Publish message"| SUB
-    end
-
-    subgraph SF["❄️ Snowflake"]
-        direction TB
-        NI["🔔 Notification Integration"]
-        PIPE["⚙️ Snowpipe<br/>AUTO_INGEST = TRUE"]
-        STAGE["📂 External Stage"]
-        SI["🔐 Storage Integration<br/>(Snowflake-managed Service Account)"]
-        TBL[("🗄️ Target Table")]
-        NI -->|"5. Trigger ingestion"| PIPE
-        PIPE -->|"6. Locate new file"| STAGE
-        STAGE -.->|"uses"| SI
-        PIPE -->|"8. COPY INTO"| TBL
-    end
-
-    SUB -->|"4. Event notification"| NI
-    SI -->|"7. Secure read (IAM-governed)"| GCS
-
-    classDef gcp fill:#E8F0FE,stroke:#4285F4,stroke-width:2px,color:#000
-    classDef snow fill:#E3F6FD,stroke:#29B5E8,stroke-width:2px,color:#000
-    classDef src fill:#FFF4E5,stroke:#FB8C00,stroke-width:2px,color:#000
-    class GCS,TOPIC,SUB gcp
-    class NI,PIPE,STAGE,SI,TBL snow
-    class SRC src
-```
+<img width="2400" height="1780" alt="architecture" src="https://github.com/user-attachments/assets/1854c660-db59-49d5-894c-b4e31d15649e" />
 
 ## Project Overview
 

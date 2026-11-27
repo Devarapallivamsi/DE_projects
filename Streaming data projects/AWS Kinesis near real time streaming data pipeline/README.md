@@ -1,5 +1,5 @@
 # AWS Kinesis near-real time streaming data pipeline
-
+<img width="2400" height="2030" alt="image" src="https://github.com/user-attachments/assets/306f4da6-933e-42ae-8a9b-f9163c6b776d" />
 
 ## Overview
 This project is created to transform and ingest the streaming data.

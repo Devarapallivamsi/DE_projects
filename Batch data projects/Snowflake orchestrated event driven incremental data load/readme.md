@@ -1,5 +1,6 @@
 # Real-Time Event driven Data Ingestion from Google Cloud Storage to Snowflake using Snowpipe
-<img width="713" height="138" alt="image" src="https://github.com/user-attachments/assets/97f1924c-5443-442c-95c9-e61d737db542" />
+<img width="547" height="365" alt="image" src="https://github.com/user-attachments/assets/d9923e4c-2e6d-433b-b622-46374886520b" />
+
 
 ## Project Overview
 

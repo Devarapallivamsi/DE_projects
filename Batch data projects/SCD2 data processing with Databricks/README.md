@@ -1,6 +1,4 @@
 # SCD data (type2) merge ingestion on databricks using PySpark
-![image](https://github.com/user-attachments/assets/fb778bdc-e593-40d5-8031-32a30309ccd4) <br><br>
-
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/2426f122-de93-4005-a40a-3031c3534a57" />
 
 

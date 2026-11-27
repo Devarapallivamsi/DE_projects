@@ -1,6 +1,6 @@
-![image](https://github.com/user-attachments/assets/210aaf71-2863-4f10-b66f-02a5dd66fc09)
-
 # SCD (Type 1) Data ingestion using Databricks and PySpark on AWS
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/3e58bcb1-1d94-46aa-9fe7-bec35d2c2da7" />
+
 
 ## Objective 🥅:
 This project is designed to automate a data pipeline that processes the daily-data files to maintain the latest and updated state of records ensuring efficient processing, loading, and updating of a target table while maintaining data integrity. It includes steps like staging, archiving, and configuring the alerting mechanism.
